@@ -1,0 +1,12 @@
+name: Todo
+options:
+    bundleIdPrefix: com.latihangoding
+    deploymentTarget:
+        iOS: 13.0
+    postGenCommand: pod install || pod install --repo-update
+targets:
+    Todo:
+        type: application
+        platform: iOS
+        sources:
+            - path: Todo
